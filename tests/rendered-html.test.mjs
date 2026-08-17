@@ -19,6 +19,8 @@ test("renders the Old Weather holding page", async () => {
   assert.match(html, /project is currently resting/i);
   assert.match(html, /not currently running an active transcription project/i);
   assert.doesNotMatch(html, /Old Weather: WWII|Old Weather: Whaling|Old Weather: Arctic/);
-  assert.doesNotMatch(html, /Explore the projects|Community forum/);
+  assert.doesNotMatch(html, /Explore the projects/);
+  assert.match(html, /href="https:\/\/oldweatherforum\.org\/"[^>]*>Old Weather forum/);
+  assert.ok(html.indexOf("Old Weather forum") < html.indexOf("Project blog"));
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
 });

@@ -54,6 +54,7 @@ export default function Home() {
           <h2 id="more-heading">Explore the science<br />and stories.</h2>
         </div>
         <div className="more-links">
+          <a href="https://oldweatherforum.org/" target="_blank" rel="noreferrer">Old Weather forum <Arrow /></a>
           <a href="https://oldweather.wordpress.com/" target="_blank" rel="noreferrer">Project blog <Arrow /></a>
           <a href="https://oldweather.wordpress.com/results/" target="_blank" rel="noreferrer">Data &amp; results <Arrow /></a>
           <a href="https://www.zooniverse.org/" target="_blank" rel="noreferrer">About Zooniverse <Arrow /></a>
